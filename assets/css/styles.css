@@ -29,7 +29,7 @@ body {
     var(--soft-violet) 0%,
     var(--soft-blue) 100%
   );
-  height: 768px;
+  height: 745px;
   padding: 1px;
 }
 @media screen and (min-width: 1024px) {
@@ -49,6 +49,7 @@ body {
   justify-content: center;
   align-items: center;
   max-width: 100%;
+  box-shadow: 0px 25px 25px 0px rgba(74, 75, 94, 0.5);
 }
 @media screen and (min-width: 1024px) {
   .faq .card {
@@ -130,6 +131,9 @@ body {
 .faq .card .card__body .details-faq {
   border-bottom: thin solid var(--light-grayish-blue);
   margin-bottom: 5px;
+}
+.faq .card .card__body .details-faq:not([open]) .details-faq__summary {
+  color: var(--very-dark-grayish-blue);
 }
 .faq .card .card__body .details-faq:not([open]) .details-faq__summary:after {
   content: "";

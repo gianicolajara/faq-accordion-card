@@ -4,9 +4,10 @@ d.addEventListener("DOMContentLoaded", (e) => {
   d.addEventListener("click", (e) => {
     if (e.target.matches(".details-faq__summary")) {
       if (!e.target.parentElement.hasAttribute("open")) {
-        Array.from(d.querySelectorAll(".details-faq"))
-          .filter((value) => value.hasAttribute("open"))[0]
-          .removeAttribute("open");
+        const result = Array.from(
+          d.querySelectorAll(".details-faq")
+        ).find((value) => value.hasAttribute("open"));
+        if (result) result.removeAttribute("open");
       }
     }
   });
