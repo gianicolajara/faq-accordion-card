@@ -29,7 +29,7 @@ body {
     var(--soft-violet) 0%,
     var(--soft-blue) 100%
   );
-  height: 745px;
+  height: 768px;
   padding: 1px;
 }
 @media screen and (min-width: 1024px) {
